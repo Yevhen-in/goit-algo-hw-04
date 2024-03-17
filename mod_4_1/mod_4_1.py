@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 
 def total_salary(path):
-    with open(path) as reader:
+    with open(path, encoding='utf-8') as reader:
         employees_list = [el.strip() for el in reader.readlines()]
         total = 0
         for employee in employees_list:

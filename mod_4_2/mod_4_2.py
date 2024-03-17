@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 
 def get_cats_info(path):
-    with open(path) as reader:
+    with open(path, encoding='utf-8') as reader:
         result = []
         cat_info_dict = {}
         while True:
